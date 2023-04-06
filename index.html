@@ -4,31 +4,50 @@
     <title>첫 코딩_index</title>
     <meta charset="utf-8">
     <style>
-        a {
-            color: black; text-decoration: none; text-align: left;
+        body{ margin: 0;        }
+        a {color: black; text-decoration: none; text-align: center;        }
+        ol{ border-right: 1px solid gray; text-align: center;
+            width: 110px; margin:0; padding-top:15px ;  padding-left: 20px;      }        
+        h1 {font-size: 30px; text-align: center; border-bottom: 1px solid gray; margin: 0px; padding: 10px;        }     
+         #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+        ol{ padding-top: 5px; padding-left: 20px;}
+             h3{ margin: 3px;}
+        #grid ol{
+      padding-left:33px;
+    }
+        #grid #article{ padding-left:25px
         }
-        h1 {
-            font-size: 50px; text-align: center;
-        }
-        h4 {
-            color: blue; font-size : ;
-        }
-        h5{ font-size: px;
+        @media (max-width : 800px){
+            #grid{
+                display: block;
             }
+            ol{
+                border-right : none;
+            }
+            h1{
+                border-bottom : none;
+            }
+        }               
     </style>
 </head>
 <boby>
     <h1><a href="index.html">우리 가족 소개</a></h1>
-    <p><ol><h4>
+    <div id="grid">
+    <ol>
         <li><a href="1.html">아빠 전병우</a></li>
         <li><a href="2.html">엄마 한정전</a></li>
         <li><a href="3.html">아들 전찬민</a></li>
         <li><a href="4.html">딸   전다현</a></li>   
-    </ol></p></h4>
-    <p><h5>우리 가족은 동대문구 이문동 대성유니드 아파트에 살고 있습니다.<br>
-    옆집에는 할아버지와 할머니도 계시죠. <br>
-    집앞으로는 중랑천이 흐르고 있어 항상 아름다워요. <br>
-    다들 부러워하는 행복한 가족이랍니다.<br></h5></p>
-    
+    </ol>
+    <div id="article" >
+        <h3>행복한 우리 가족 소개</h3>
+    <p>우리 가족은 동대문구 이문동 대성유니드 아파트에 살고 있습니다.
+    옆집에는 할아버지와 할머니도 계시죠.
+    집앞으로는 중랑천이 흐르고 있어 항상 아름다워요.
+    다들 부러워하는 행복한 가족이랍니다.<br></p>
+    </div></div>
 </boby>
 </html>
