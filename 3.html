@@ -3,41 +3,55 @@
 <head>
     <title>첫 코딩_전찬민</title>
     <meta charset="utf-8">
+    <style>
+        body{ margin: 0;        }
+        a {color: black; text-decoration: none; text-align: center;        }
+        ol{ border-right: 1px solid gray; text-align: center;
+            width: 110px; margin:0; padding-top:15px ;  padding-left: 20px;      }        
+        h1 {font-size: 30px; text-align: center; border-bottom: 1px solid gray; margin: 0px; padding: 10px;        }     
+         #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+        ol{ padding-top: 5px; padding-left: 20px;}
+             h3{ margin: 3px;}
+        #grid ol{
+      padding-left:33px;
+    }
+        #grid #article{ padding-left:25px
+        }
+        @media (max-width : 800px){
+            #grid{
+                display: block;
+            }
+            ol{
+                border-right : none;
+            }
+            h1{
+                border-bottom : none;
+            }
+        }               
+    </style>
 </head>
 <boby>
     <h1><a href="index.html">우리 가족 소개</a></h1>
-    <p><ol><h4>
+    <div id="grid">
+    <ol>
         <li><a href="1.html">아빠 전병우</a></li>
         <li><a href="2.html">엄마 한정선</a></li>
         <li><a href="3.html">아들 전찬민</a></li>
         <li><a href="4.html">딸   전다현</a></li>    
-    </ol></p></H4>
-    <img src="20230301_135743.jpg" style="width : auto; height: 600px;">
-    <p><h5>찬민이는 11살입니다. 상징하는 동물은 '스네이크'예요.<br>
-    현재 "서울 석계초등학교 4학년"에 다니고 있습니다.<br>
-    동생 다현이를 아주많이 사랑하고 있어요.<br>
+    </ol>
+       <div id="article" >
+        <h3>몽글 몽글 전찬민</h3>
+
+    <p>찬민이는 11살입니다. 상징하는 동물은 신비롭기도하고 무섭기도한 '스네이크'예요.
+    현재 "서울 석계초등학교 4학년"에 다니고 있으며 방과 후 학습과 태권도 등 다양한 학습도 하고 있어요
+    게임과 유튜브를 즐길 시간이 더 많았으며 좋겠지만 멋진 찬민이로 성장하기 위해서 관리하고 있습니다.
+    여동생이 한명있는데 이름운 전다현이예요.  너무나 사랑스러운 동생이죠. 제 이야기를 잘 들어주고 놀이도 같이 한답니다. 
     피구를 아주 잘하고 스스로 학습하는 것에 많은 노력을 하고 있답니다. 최근 한글 글씨도 멋져지고 있어요.<br>
-    아침, 저녁으로 새로운 아이템을 받기 위해 게임에도 열심히랍니다.<br></h5></p>
+    <br>
+</p></div></div>
+        <img src="20230301_135743.jpg" style="width : auto; height: 600px;">
 </boby>
- <div id="disqus_thread"></div>
-<script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://web1-2.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
 </html>

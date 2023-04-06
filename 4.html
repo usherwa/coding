@@ -3,40 +3,52 @@
 <head>
     <title>첫 코딩_전다현</title>
     <meta charset="utf-8">
+    <style>
+        body{ margin: 0;        }
+        a {color: black; text-decoration: none; text-align: center;        }
+        ol{ border-right: 1px solid gray; text-align: center;
+            width: 110px; margin:0; padding-top:15px ;  padding-left: 20px;      }        
+        h1 {font-size: 30px; text-align: center; border-bottom: 1px solid gray; margin: 0px; padding: 10px;        }     
+         #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+        ol{ padding-top: 5px; padding-left: 20px;}
+             h3{ margin: 3px;}
+        #grid ol{
+      padding-left:33px;
+    }
+        #grid #article{ padding-left:25px
+        }
+        @media (max-width : 800px){
+            #grid{
+                display: block;
+            }
+            ol{
+                border-right : none;
+            }
+            h1{
+                border-bottom : none;
+            }
+        }
+    </style>
 </head>
 <boby>
     <h1><a href="index.html">우리 가족 소개</a></h1>
-    <p><ol><h4>
+    <div id="grid">
+    <ol>
         <li><a href="1.html">아빠 전병우</a></li>
         <li><a href="2.html">엄마 한정선</a></li>
         <li><a href="3.html">아들 전찬민</a></li>
         <li><a href="4.html">딸   전다현</a></li>    
-    </ol></p></H4>
-    <img src="20230122_104030.jpg" style="width : auto; height: 600px;">
-    <p><h5>저는 전다현입니다. 우리집의 최고의 보물이자 공주이죠.<br>
-    나이는 7살이고 현재 "두산 효자유치원"에 다니고 있습니다.<br>
-    호기심이 많아 새로운게 있으면 궁금해요.오빠와 놀이하는게 너무나 재미구요.<br>
-    가끔 똥 빤스를 만들어서 이모님, 엄마, 아빠를 당황하게 하지만 곧 끙가를 잘할거예요.<br>
-    </h5></p>
- <div id="disqus_thread"></div>
-<script>
+    </ol>
+    <div id="article" >
+        <h3>만능 사랑꾼 전다현</h3>
 
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://web1-2.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</boby>
+    <p>아기 천사 다현이는 7살입니다.<br> 
+    현재 "두산 효자유치원" 제일 높은 학년으로 재미있게 다니고 있습니다.
+    저는 우리집의 없어서는 안될 마스코트이자 사랑꾼이랍니다. 제가 없으면 우리 가족뿐만 아니라 할머니, 할어머니들도 심심하거예요. 
+    오빠를 너무 좋아해서 같이 놀이하는게 재미있어요. 하지만 가끔 오빠가 괴롭혀서 힘들때도 있답니다.
+    <br></p>
+    <img src="20221228_211752.jpg" style="width : auto; height: 600px;">
 </html>
