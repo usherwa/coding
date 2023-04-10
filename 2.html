@@ -1,58 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <title>첫 코딩_엄마</title>
-    <meta charset="utf-8">
-    <style>
-        body{ margin: 0;        }
-        a {color: black; text-decoration: none; text-align: center;        }
-        ol{ border-right: 1px solid gray; text-align: center;
-            width: 110px; margin:0; padding-top:15px ;  padding-left: 20px;      }        
-        h1 {font-size: 30px; text-align: center; border-bottom: 1px solid gray; margin: 0px; padding: 10px;        }     
-         #grid{
-      display: grid;
-      grid-template-columns: 150px 1fr;
+  <title>WEB1 - CSS</title>
+  <meta charset="utf-8">
+  <style>
+     body {
+      margin: 0;
+    } 
+     a {
+      color: black;
+      text-decoration: none;
+     }
+    h1 { 
+      font-size: 45px; text-align: center;
+      border-bottom: 2px solid gray;
+      margin: 0; 
+      padding: 20px;
+     }
+    ol{
+      width: 100px;
+      border-right: 2px solid gray;
+      margin: 0; padding:20px;
     }
-        ol{ padding-top: 5px; padding-left: 20px;}
-             h3{ margin: 3px;}
-        #grid ol{
-      padding-left:33px;
+    #grid {
+      display:grid;
+      grid-template-columns: 150px 1fr; 
+      } 
+    #grid ol {
+      padding-left: 33px;    
+    }   
+    #article {
+      padding-left: 20px;
     }
-        #grid #article{ padding-left:25px
-        }
-        @media (max-width : 800px){
-            #grid{
-                display: block;
-            }
-            ol{
-                border-right : none;
-            }
-            h1{
-                border-bottom : none;
-            }
-        }           
-
-    </style>
+    
+  </style>
 </head>
-<boby>
-    <h1><a href="index.html">우리 가족 소개</a></h1>
-    <div id="grid">
+<body>
+  <h1><a href="index.html">WEB</a></h1>
+  <div id="grid">
     <ol>
-        <li><a href="1.html">아빠 전병우</a></li>
-        <li><a href="2.html">엄마 한정선</a></li>
-        <li><a href="3.html">아들 전찬민</a></li>
-        <li><a href="4.html">딸   전다현</a></li>    
-    </ol>  
-    <div id="article" >
-        <h3> 원더우먼 엄마 한정선</h3>
-    <p>엄마는 나이가 아빠와 같아요. 상징하는 동물도 똑같은 '말'입니다.
-    현재 "아이센스"라는 회사를 다니고 있고 리더로써 스트레스를 많이 받고 있어요.
-    그래서 언제 회사를 그만 둘 수 있을까 고민하고 있답니다. 하지만 아빠의 직장이 풍전등화로 쉽게 결정하지 못할 것 같아요.
-    이 세상에서 찬민이와 다현이를 제일로 아주많이 사랑하고 있어요.
-    영어 공부를 아주 열심히하며 최근에 골프도 배우기 시작했습니다.
-    참 다현이 똥 팬티 빠는걸 아주 잘한답니다.<br></p>
-    </div>
-    </div>
-    <img src="20221022_162532.jpg" style="width:500px; height: auto;">
-</boby>
+      <li><a href="1.html" >HTML</a></li>
+      <li><a href="2.html" >CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+
+  <!-- <h1><a href="index.html"><font color="red">WEB></font></a></h1>
+  <ol>
+    <li><a href="1.html"><font color="red">HTML</font></a></li>
+    <li><a href="2.html"><font color="red">CSS</font></a></li>
+    <li><a href="3.html"><font color="red">JavaScript</font></a></li>
+  </ol> -->
+      <div id="article">
+        <h2>CSS</h2>
+        <p>
+          Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.
+          Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.
+        </p>
+      </div>
+  </div>
+</body>
 </html>
